@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="37114BF7-58D5-8BF3-19C1-8E2AFE6D6639" name="T_SFS_PRONT_MED">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:11:24 UTC</createdTime>
+<notes><![CDATA[É o principal documento contendo todas as informações a respeito do paciente que orienta médicos e outros profissionais na prestação de cuidados de saúde.]]></notes>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula(paciente)" id="50B30C1D-C56E-11E4-964E-C7E2CB0F8951">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:12:09 UTC</createdTime>
+<comment><![CDATA[Número de identificação único e sequencial por paciente. Ele é composto por um conjunto de elementos numéricos.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_matricula" id="DDA5F6C2-7CAC-AE46-CF41-76ACDAD0CDC9">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-16 21:19:48 UTC</createdTime>
+<comment><![CDATA[Número de identificação único e sequencial por paciente. Ele é composto por um conjunto de elementos numéricos.]]></comment>
+<generatorID>8197844C-91ED-9EF3-5C46-CE98E010E722</generatorID>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<referedAttribute>213B9544-2836-50F4-BD78-A11FC126CD42</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_visita_medico" id="D2D30176-234A-A471-06CB-8210D38C0828">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:24:51 UTC</createdTime>
+<comment><![CDATA[É a data e horário que o médico passa a visita a beira leito que resultou na produção do registro das informações no prontuário. Valor obrigatório. Formato dd/mm/aaaa. Horário: --:--;]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_paciente" id="7C25EF31-6D7D-DE6E-0D95-6BB2C22B6912">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:26:46 UTC</createdTime>
+<comment><![CDATA[O nome deverá ser o mesmo do documento de identificação apresentado. Seu conteúdo é sempre obrigatório. Nos casos de não haver possibilidade de identificação, será usado o termo SEM IDENTIFICAÇÃO
+Exemplo:
+Rita de Cássia Rodrigues.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_leito" id="2CBD9D13-2771-51EE-1CF3-9B349EE32705">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:30:21 UTC</createdTime>
+<comment><![CDATA[O número do leito deverá seguir uma identificação específica de acordo com a localização no prédio, sendo:
+00 (andar) + NA (ala norte) ou AS (ala sul) + nº leito para internados
+Exemplos:
+02AN01 – 2º andar Ala Norte leito 1
+05AS05 – 5º andar Ala Sul leito 5]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_crm" id="32FEA0F9-E556-19C2-8EC5-0507AB288643">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:48:32 UTC</createdTime>
+<comment><![CDATA[O número do Conselho. É um número único para cada estado da Federação. O Conselho Regional deve ser do Estado de São Paulo (ou região que o contemple) que é o local onde o hospital está localizado. Os médicos podem atuar como corpo clínico aberto, ou seja, o profissional não está necessariamente vinculado como funcionário do hospital, podendo fazer parte de uma equipe. É obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_medico" id="14AC4A56-4682-299D-C948-40DA08E17D6A">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:49:50 UTC</createdTime>
+<comment><![CDATA[O nome completo do médico. Seu conteúdo é sempre obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_anamnese" id="6BA8788B-8B06-3E82-6DB2-E10F0928ACF4">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:50:37 UTC</createdTime>
+<comment><![CDATA[A anamnese médica é um procedimento fundamental para estabelecer o diagnóstico preciso e instituir as condutas terapêuticas mais adequadas às condições clínicas do paciente. Ela geralmente é realizada na admissão do paciente ao hospital.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_evolucao_pcnt" id="95CB603A-7AEC-BCD4-CF8F-D5626E799D0D">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:52:52 UTC</createdTime>
+<comment><![CDATA[A evolução precisa constar no prontuário a cada visita por todos os profissionais de saúde, sendo um descritivo das ações tomadas e da situação observada do paciente. Obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="F7798C7C-1E3B-C9D7-BCEF-EA7C71B8759A">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:45:58 UTC</createdTime>
+<comment><![CDATA[Data de nascimento é uma informação importante, no entanto, há casos em que o paciente não consegue se comunicar, seja por estado de inconsciência, por ser estrangeiro sem possibilidade de tradução na comunicação de documentos e na anamnese, por moradores de rua sem documentação oficial ou nome completo, etc. Quando não houver, poderá ficar vazio.
+Exemplo:
+23/04/2020]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_mae" id="34FB9CDA-EECB-92F5-2DC5-8208E31A7379">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:46:41 UTC</createdTime>
+<comment><![CDATA[O nome completo da mãe como consta em documento de identificação do paciente. Deve ser completo e é usado como dado adicional para desambiguação de homônimos. Quando não houver, poderá ficar vazio.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_hipotese_diag" id="C2AEDB71-285F-1B01-8D5B-37F446499272">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:54:25 UTC</createdTime>
+<comment><![CDATA[A hipótese diagnóstica também não necessita ser preenchida todos os dias. Ela pode mudar conforme evolução do paciente, surgimento de novos sintomas, resultados de exames, podendo apresentar mais de uma possibilidade etc. Há a possibilidade de não haver uma hipótese diagnóstica para o caso observado.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F7718653-3636-0BE7-04EE-9F18C5D5D81B" name="T_SFS_PRONT_MED PK">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:14:31 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>50B30C1D-C56E-11E4-964E-C7E2CB0F8951</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

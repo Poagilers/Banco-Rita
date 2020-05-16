@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="474D5B25-5B7C-C315-E6AD-7C13D5F400CE" name="T_SFS_PROF_NAO_MED">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:56:02 UTC</createdTime>
+<comment><![CDATA[Aquele que faz prontuário e registro tem contato com o paciente.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_registro_funcionario" id="CDF00E43-AD54-A78D-0744-852CF750D76B">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:58:37 UTC</createdTime>
+<comment><![CDATA[Número de registro é um número de identificação único e sequencial para profissionais contratados do hospital. Profissionais não médicos não podem atuar como corpo clínico aberto, tendo que fazer parte do quadro de funcionários formal do hospital.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_prontuario" id="6C809E71-81C0-8729-42F4-AD81D0DA209A">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-16 21:22:58 UTC</createdTime>
+<comment><![CDATA[Sequência única de números para identificar o prontuário. Exemplo: 123456.]]></comment>
+<generatorID>C1AD1522-6744-C026-84C9-BE31E2DA58F9</generatorID>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<referedAttribute>D93599AA-953E-3131-3CC7-0ECD84CF3516</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_conselho" id="5D248DF3-7A4C-A934-7A2B-30F9B5C0056D">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:59:57 UTC</createdTime>
+<comment><![CDATA[É o número que identifica qual é conselho que vai registrar, fiscalizar e disciplinar as profissões regulamentadas.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_conselho" id="B382FF92-0000-0382-74F0-C84F0E63B2D5">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:08:19 UTC</createdTime>
+<comment><![CDATA[Conselho de profissões regulamentadas são conselhos formados por profissionais de cada profissão do estado de São Paulo ou região correspondente. A sigla vai identificar qual é o conselho.
+Exemplo: CRF, COREN, COFFITO, CRO, CRN, etc.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_covid_medico" id="1739F73D-F622-41A1-6A43-520C83D6F995">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 23:08:20 UTC</createdTime>
+<comment><![CDATA[Status de treinamento para cuidados de pacientes com a covid-19. O treinamento é realizado pelo hospital baseado em diretrizes do Ministério da Saúde. Concluindo o treinamento, o profissional tem o certificado ou não. O profissional só pode atuar no combate à covid-19 após o treinamento. Valor obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CDE84D46-FD11-90D5-A035-AA7EDC004BDB" name="T_SFS_PROF_NAO_MED PK">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:58:43 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CDF00E43-AD54-A78D-0744-852CF750D76B</attributeRef>
+<attributeRef>6C809E71-81C0-8729-42F4-AD81D0DA209A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

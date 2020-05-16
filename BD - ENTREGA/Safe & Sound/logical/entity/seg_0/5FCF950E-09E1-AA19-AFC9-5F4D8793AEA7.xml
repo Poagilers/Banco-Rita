@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FCF950E-09E1-AA19-AFC9-5F4D8793AEA7" name="T_SFS_MEDICO">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:36:26 UTC</createdTime>
+<comment><![CDATA[Profissional de saúde autorizado pelo Estado para exercer a medicina; se ocupa da saúde humana, previnindo, diagnosticando, tratando e curando as doenças.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_cm" id="FA0DEEFD-8753-0771-F0F1-B2D66AD56562">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:41:36 UTC</createdTime>
+<comment><![CDATA[O número do Conselho. É um número único para cada estado da Federação. O Conselho Regional deve ser do Estado de São Paulo (ou região que o contemple) que é o local onde o hospital está localizado. Os médicos podem atuar como corpo clínico aberto, ou seja, o profissional não está necessariamente vinculado como funcionário do hospital, podendo fazer parte de uma equipe. É obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_matricula(paciente)" id="FC1D2782-9733-8AEF-37F0-55C9AB094236">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-16 21:21:29 UTC</createdTime>
+<comment><![CDATA[Número de identificação único e sequencial por paciente. Ele é composto por um conjunto de elementos numéricos.]]></comment>
+<generatorID>CFC8D61F-7A52-BE51-3A12-2FE544A9E39D</generatorID>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<referedAttribute>50B30C1D-C56E-11E4-964E-C7E2CB0F8951</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_medico" id="EEEB0A7F-6187-A020-83C8-8C6F52B3AF14">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:42:12 UTC</createdTime>
+<comment><![CDATA[O nome completo do médico. Seu conteúdo é sempre obrigatório.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_especialidade" id="C0CD84C2-7103-A284-0B9C-41473DF35648">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:43:05 UTC</createdTime>
+<comment><![CDATA[Um médico pode ter mais de uma especialidade como formação, no entanto, o hospital só admite que o colaborador médico atue em uma. Ex. Endocrinologia, Pneumologia, Infectologia, etc.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_covid_medico" id="240ACE40-0FB8-F029-8A5D-55ABD7C67612">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:43:05 UTC</createdTime>
+<comment><![CDATA[Status de treinamento para cuidados de pacientes com a covid-19. O treinamento é realizado pelo hospital baseado em diretrizes do Ministério da Saúde. Concluindo o treinamento, o profissional tem o certificado ou não. O profissional só pode atuar no combate à covid-19 após o treinamento. Valor obrigatório]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="851EEC05-7630-A5BD-E811-4DCC8A2D71CD" name="T_SFS_MEDICO PK">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:41:54 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA0DEEFD-8753-0771-F0F1-B2D66AD56562</attributeRef>
+<attributeRef>FC1D2782-9733-8AEF-37F0-55C9AB094236</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

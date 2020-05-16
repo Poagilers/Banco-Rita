@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="895ACFDC-8A56-0B24-CD47-9BC95441725B" mainViewID="4A0C8800-DBF4-F21D-0886-7CEF1FFBAF9D">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:19:34 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

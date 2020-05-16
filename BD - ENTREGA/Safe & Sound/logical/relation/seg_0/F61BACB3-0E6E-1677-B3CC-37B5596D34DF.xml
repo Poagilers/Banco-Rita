@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="F61BACB3-0E6E-1677-B3CC-37B5596D34DF">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-16 21:22:12 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
+<sourcePk>FF908048-B801-51B3-0509-8B5C9BAF0AB6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3814E82A-2885-8CF2-CD03-80AF25EF9C62</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FD9978BA-39E4-C66C-40D1-B467307EE2BD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

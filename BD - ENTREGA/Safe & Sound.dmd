@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Safe &amp; Sound" id="5F330792-85DA-A4F3-8423-1FA82289B18A" version="3.5">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:19:34 UTC</createdTime>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5F330792-85DA-A4F3-8423-1FA82289B18A</designId>
+</OSDM_Design>
