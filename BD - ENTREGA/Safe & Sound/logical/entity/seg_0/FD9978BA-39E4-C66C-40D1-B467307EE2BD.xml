@@ -16,17 +16,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="nr_prontuario" id="D93599AA-953E-3131-3CC7-0ECD84CF3516">
-<createdBy>gamsilva</createdBy>
-<createdTime>2020-05-14 00:03:28 UTC</createdTime>
-<comment><![CDATA[Sequência única de números para identificar o prontuário. Exemplo: 123456.]]></comment>
-<ownerDesignName>Safe &amp; Sound</ownerDesignName>
-<engineerTo>
-<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nr_matricula" id="086E0AC1-A2A0-1723-3683-D711BE624148">
 <createdBy>gamsilva</createdBy>
 <createdTime>2020-05-16 21:22:12 UTC</createdTime>
@@ -37,6 +26,17 @@
 <item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
 </engineerTo>
 <referedAttribute>213B9544-2836-50F4-BD78-A11FC126CD42</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_prontuario" id="D93599AA-953E-3131-3CC7-0ECD84CF3516">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-14 00:03:28 UTC</createdTime>
+<comment><![CDATA[Sequência única de números para identificar o prontuário. Exemplo: 123456.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -149,6 +149,7 @@ Exemplos:
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D93599AA-953E-3131-3CC7-0ECD84CF3516</attributeRef>
+<attributeRef>086E0AC1-A2A0-1723-3683-D711BE624148</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

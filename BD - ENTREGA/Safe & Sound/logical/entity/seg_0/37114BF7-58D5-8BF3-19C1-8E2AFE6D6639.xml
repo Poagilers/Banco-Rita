@@ -16,17 +16,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="nr_matricula(paciente)" id="50B30C1D-C56E-11E4-964E-C7E2CB0F8951">
-<createdBy>gamsilva</createdBy>
-<createdTime>2020-05-13 23:12:09 UTC</createdTime>
-<comment><![CDATA[Número de identificação único e sequencial por paciente. Ele é composto por um conjunto de elementos numéricos.]]></comment>
-<ownerDesignName>Safe &amp; Sound</ownerDesignName>
-<engineerTo>
-<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nr_matricula" id="DDA5F6C2-7CAC-AE46-CF41-76ACDAD0CDC9">
 <createdBy>gamsilva</createdBy>
 <createdTime>2020-05-16 21:19:48 UTC</createdTime>
@@ -172,7 +161,7 @@ Exemplo:
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>50B30C1D-C56E-11E4-964E-C7E2CB0F8951</attributeRef>
+<attributeRef>DDA5F6C2-7CAC-AE46-CF41-76ACDAD0CDC9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

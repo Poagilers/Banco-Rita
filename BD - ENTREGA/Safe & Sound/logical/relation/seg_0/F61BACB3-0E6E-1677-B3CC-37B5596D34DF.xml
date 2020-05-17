@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="F61BACB3-0E6E-1677-B3CC-37B5596D34DF">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Ter" directorySegmentName="seg_0" id="F61BACB3-0E6E-1677-B3CC-37B5596D34DF">
 <createdBy>gamsilva</createdBy>
 <createdTime>2020-05-16 21:22:12 UTC</createdTime>
 <ownerDesignName>Safe &amp; Sound</ownerDesignName>
@@ -7,7 +7,7 @@
 <item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
 </engineerTo>
 <sourcePk>FF908048-B801-51B3-0509-8B5C9BAF0AB6</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

@@ -16,14 +16,16 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="nr_registro_funcionario" id="CDF00E43-AD54-A78D-0744-852CF750D76B">
+<Attribute name="nr_matricula" id="3DD860D5-41B5-4D6E-9C90-F7A62C94B9D9">
 <createdBy>gamsilva</createdBy>
-<createdTime>2020-05-13 22:58:37 UTC</createdTime>
-<comment><![CDATA[Número de registro é um número de identificação único e sequencial para profissionais contratados do hospital. Profissionais não médicos não podem atuar como corpo clínico aberto, tendo que fazer parte do quadro de funcionários formal do hospital.]]></comment>
+<createdTime>2020-05-17 14:20:22 UTC</createdTime>
+<comment><![CDATA[Número de identificação único e sequencial por paciente. Ele é composto por um conjunto de elementos numéricos.]]></comment>
+<generatorID>C1AD1522-6744-C026-84C9-BE31E2DA58F9</generatorID>
 <ownerDesignName>Safe &amp; Sound</ownerDesignName>
 <engineerTo>
 <item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
 </engineerTo>
+<referedAttribute>086E0AC1-A2A0-1723-3683-D711BE624148</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -37,6 +39,17 @@
 <item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
 </engineerTo>
 <referedAttribute>D93599AA-953E-3131-3CC7-0ECD84CF3516</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_registro_funcionario" id="CDF00E43-AD54-A78D-0744-852CF750D76B">
+<createdBy>gamsilva</createdBy>
+<createdTime>2020-05-13 22:58:37 UTC</createdTime>
+<comment><![CDATA[Número de registro é um número de identificação único e sequencial para profissionais contratados do hospital. Profissionais não médicos não podem atuar como corpo clínico aberto, tendo que fazer parte do quadro de funcionários formal do hospital.]]></comment>
+<ownerDesignName>Safe &amp; Sound</ownerDesignName>
+<engineerTo>
+<item key="21C07F06-DDA6-385C-C9F3-9417E4242EDC" value="true"/>
+</engineerTo>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -87,6 +100,7 @@ Exemplo: CRF, COREN, COFFITO, CRO, CRN, etc.]]></comment>
 <usedAttributes>
 <attributeRef>CDF00E43-AD54-A78D-0744-852CF750D76B</attributeRef>
 <attributeRef>6C809E71-81C0-8729-42F4-AD81D0DA209A</attributeRef>
+<attributeRef>3DD860D5-41B5-4D6E-9C90-F7A62C94B9D9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
