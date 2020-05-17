@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="CFC8D61F-7A52-BE51-3A12-2FE544A9E39D">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="É REDIGIDO POR" directorySegmentName="seg_0" id="CFC8D61F-7A52-BE51-3A12-2FE544A9E39D">
 <createdBy>gamsilva</createdBy>
 <createdTime>2020-05-16 21:21:29 UTC</createdTime>
 <ownerDesignName>Safe &amp; Sound</ownerDesignName>

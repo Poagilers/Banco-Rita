@@ -13,27 +13,78 @@
 <diagramColor>-1</diagramColor>
 <display>false</display>
 <notation>2</notation>
+<showAllDetails>false</showAllDetails>
 <showClassificationTypes>true</showClassificationTypes>
+<showElements>true</showElements>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2B502348-C1D7-1DD7-829A-87CAE236CE73" otype="Note" vid="8DB4EEB5-D4EC-F02E-F9EC-BFC76B5BED41">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="321" y="536" width="530" height="89"/>
+<comment>T_SFS_PRONT_PROF_N_MED pode ter uma ou mais associações com T_SFS_NAO_MEDICO
+Um prontuário não médico pode ser registrado por um ou vários profissionais não médicos
+
+T_SFS_PROF_NAO_MED deve estar associado a uma única ocorrência de T_SFS_PRONT_PROF_N_MED
+Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apenas por um profissional não médico
+</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="37114BF7-58D5-8BF3-19C1-8E2AFE6D6639" otype="Entity" vid="814E2A87-6AB5-081A-B242-3C10AC7A959D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="441" y="38" width="280" height="220"/>
+<bounds x="763" y="41" width="204" height="220"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3814E82A-2885-8CF2-CD03-80AF25EF9C62" otype="Entity" vid="A19CD880-88CE-1CF5-F829-065D5250CCA9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="48" y="43" width="206" height="165"/>
+<bounds x="48" y="43" width="197" height="165"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="41A1BB92-7250-D880-DC43-CA76C80C707B" otype="Note" vid="A3FC8D45-9A03-511C-0166-A25C8D01CE9D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1102" y="718" width="326" height="146"/>
+<comment>COMPONENTES DO GRUPO: Poágilers
+
+Giovanna de Mello Leiva - RM 85817
+Kauê Augusto Miranda Santos - RM 85707
+Larissa Alves da Silva - RM 86351
+Gustavo Pereira dos Santos - RM 85937
+Gabriel Montovani da Silva - RM 85642
+Daniel Sanchez Melero - RM 85109
+</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="474D5B25-5B7C-C315-E6AD-7C13D5F400CE" otype="Entity" vid="A463924C-7FA6-7D41-E585-83CA0F9A731A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="527" y="379" width="439" height="145"/>
+<bounds x="883" y="441" width="232" height="145"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4EFF0BD5-957D-C582-920F-76C4DC490679" otype="Note" vid="15459B4A-5F66-A431-F2F7-E4CC7A08B02C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="255" y="131" width="492" height="114"/>
+<comment>T_SFS_PACIENTE pode estar associada a uma única ocorrência com T_SFS_PRONT_MED
+Um paciente tem um prontuário (médico e não médico, pois o prontuário envolve TODO o histórico do paciente)
+
+T_SFS_PRONT_MED deve estar associada a uma única ocorrência com T_SFS_PACIENTE
+Um prontuário deve pertencer a apenas um paciente, pois seu histórico médico só pertence a si mesmo.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="5FCF950E-09E1-AA19-AFC9-5F4D8793AEA7" otype="Entity" vid="221DE575-E946-5BE0-12DF-D0C40F438D7A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="873" y="70" width="296" height="118"/>
+<bounds x="1476" y="66" width="234" height="118"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="8901339C-52E8-7C96-7FD6-C8398CCB6790" otype="Note" vid="224997B5-6639-40AE-B5B2-66984CA44A6D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="980" y="139" width="478" height="88"/>
+<comment>T_SFS_PRONT_MED pode ter uma ou mais associações com T_SFS_MEDICO
+Um prontuário médico pode ser redigido por um ou vários profissionais não médicos
+
+T_SFS_MEDICO deve estar associado a uma única ocorrência de T_SFS_PRONT_MED
+Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apena um médico</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B4FA57E6-847F-1149-FD1E-A79B567CCA8E" otype="Note" vid="427BD649-135A-F435-8BC1-465E889E6D8A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="172" y="294" width="492" height="97"/>
+<comment>T_SFS_PACIENTE pode estar associado a cada ocorrência de T_SFS_PRONT_PROF_N_MED
+Um paciente possui um prontuário (médico e não médico, pois o prontuário envolve TODO o histórico do paciente)
+T_SFS_PRONT_PROF_N_MED deve estar associado a cada ocorrência de T_SFS_PACIENTE
+Um prontuário deve pertencer a apenas um paciente, pois seu histórico médico só pertence a si mesmo.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FD9978BA-39E4-C66C-40D1-B467307EE2BD" otype="Entity" vid="B7667784-82D3-F24C-0CE6-3562976FBD8B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="21" y="372" width="344" height="198"/>
+<bounds x="59" y="418" width="233" height="198"/>
 </OView>
 </objectViews>
 <connectors>
@@ -42,8 +93,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="254" y="125"/>
-<point x="441" y="125"/>
+<point x="245" y="125"/>
+<point x="763" y="125"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="C1AD1522-6744-C026-84C9-BE31E2DA58F9" otype="Relation" vid_source="B7667784-82D3-F24C-0CE6-3562976FBD8B" vid_target="A463924C-7FA6-7D41-E585-83CA0F9A731A">
@@ -51,8 +102,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="365" y="451"/>
-<point x="527" y="451"/>
+<point x="292" y="513"/>
+<point x="883" y="513"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="CFC8D61F-7A52-BE51-3A12-2FE544A9E39D" otype="Relation" vid_source="814E2A87-6AB5-081A-B242-3C10AC7A959D" vid_target="221DE575-E946-5BE0-12DF-D0C40F438D7A">
@@ -60,8 +111,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="721" y="129"/>
-<point x="873" y="129"/>
+<point x="967" y="125"/>
+<point x="1476" y="125"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="F61BACB3-0E6E-1677-B3CC-37B5596D34DF" otype="Relation" vid_source="A19CD880-88CE-1CF5-F829-065D5250CCA9" vid_target="B7667784-82D3-F24C-0CE6-3562976FBD8B">
@@ -69,8 +120,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="151" y="208"/>
-<point x="151" y="372"/>
+<point x="152" y="208"/>
+<point x="152" y="418"/>
 </points>
 </Connector>
 </connectors>
