@@ -24,7 +24,7 @@
 Um prontuário não médico pode ser registrado por um ou vários profissionais não médicos
 
 T_SFS_PROF_NAO_MED deve estar associado a uma única ocorrência de T_SFS_PRONT_PROF_N_MED
-Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apenas por um profissional não médico
+Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apenas um profissional não médico
 </comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="37114BF7-58D5-8BF3-19C1-8E2AFE6D6639" otype="Entity" vid="814E2A87-6AB5-081A-B242-3C10AC7A959D">
@@ -72,7 +72,7 @@ Um prontuário deve pertencer a apenas um paciente, pois seu histórico médico 
 Um prontuário médico pode ser redigido por um ou vários profissionais não médicos
 
 T_SFS_MEDICO deve estar associado a uma única ocorrência de T_SFS_PRONT_MED
-Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apena um médico</comment>
+Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade de apenas um médico</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="B4FA57E6-847F-1149-FD1E-A79B567CCA8E" otype="Note" vid="427BD649-135A-F435-8BC1-465E889E6D8A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
