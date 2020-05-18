@@ -37,7 +37,11 @@ Uma ocorrência no prontuário deve ser realizada, ou seja, é responsabilidade 
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="41A1BB92-7250-D880-DC43-CA76C80C707B" otype="Note" vid="A3FC8D45-9A03-511C-0166-A25C8D01CE9D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1102" y="718" width="326" height="146"/>
+<bounds x="1346" y="429" width="326" height="161"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 <comment>COMPONENTES DO GRUPO: Poágilers
 
 Giovanna de Mello Leiva - RM 85817
@@ -47,6 +51,14 @@ Gustavo Pereira dos Santos - RM 85937
 Gabriel Montovani da Silva - RM 85642
 Daniel Sanchez Melero - RM 85109
 </comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Título</foType>
+<fontName>Ebrima</fontName>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="474D5B25-5B7C-C315-E6AD-7C13D5F400CE" otype="Entity" vid="A463924C-7FA6-7D41-E585-83CA0F9A731A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
